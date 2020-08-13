@@ -4,8 +4,8 @@ const app = express()
 const port = 8081
 const axios = require ("axios")
 
-app.get('/live', (req, res) => {
-  res.send('Alive!')
+app.get('/', (req, res) => {
+  res.send("I'm alive!")
 })
 
 app.get("/connect", (req, res)=> {
