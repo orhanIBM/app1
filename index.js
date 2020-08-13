@@ -1,8 +1,11 @@
 
 const express = require('express')
-const app = express()
-const port = 8081
+var cors = require('cors')
 const axios = require ("axios")
+
+const app = express()
+app.use(cors())
+const port = 8081
 
 app.get('/', (req, res) => {
   res.send("I'm alive!")
