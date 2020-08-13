@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.get("/connect", (req, res)=> {
-axios.get("http://git-2-app:8080/response").then(response => res.send(response.data)).catch(err => {console.log(err), res.send(JSON.stringify(err))})
+axios.get("http://app-2-git:8080/response").then(response => res.send(response.data)).catch(err => {console.log(err), res.send(JSON.stringify(err))})
 })
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
